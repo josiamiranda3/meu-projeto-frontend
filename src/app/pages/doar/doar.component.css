@@ -1,0 +1,29 @@
+main {
+  padding-top: 50px; /* Ajuste esse valor conforme a altura real do header */
+}
+
+/* Cores padronizadas */
+.bg-footer {
+  background-color: #d4edda;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #198754;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #145c32;
+}
+
+/* Reduz altura geral */
+footer {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer input::placeholder {
+  color: #6c757d;
+}

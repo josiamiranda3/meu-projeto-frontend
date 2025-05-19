@@ -1,0 +1,2381 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0 = L.map(
+                "map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0",
+                {
+                    center: [-14.235, -51.9253],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 4,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d9aa5bbed506f75c445b3a8a89b25d42 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d9aa5bbed506f75c445b3a8a89b25d42.addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var marker_12ee2c1de3ff1a3a8b7e9361f7ffc938 = L.marker(
+                [-15.040158, -45.885497],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_c12c3d36801513738223da01f0a3b41a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ab40139336a5f4f341c2eae62345799 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f47771925a2a82ee03a0d1483654b5a = $(`<div id="html_3f47771925a2a82ee03a0d1483654b5a" style="width: 100.0%; height: 100.0%;">Onça-pintada - Bahia<br>2025-01-15T09:29:32</div>`)[0];
+                popup_4ab40139336a5f4f341c2eae62345799.setContent(html_3f47771925a2a82ee03a0d1483654b5a);
+            
+        
+
+        marker_12ee2c1de3ff1a3a8b7e9361f7ffc938.bindPopup(popup_4ab40139336a5f4f341c2eae62345799)
+        ;
+
+        
+    
+    
+                marker_12ee2c1de3ff1a3a8b7e9361f7ffc938.setIcon(icon_c12c3d36801513738223da01f0a3b41a);
+            
+    
+            var marker_2a8efa09546a7e1d4876273b7badbf16 = L.marker(
+                [-19.706251, -56.097314],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_39d6f65059a5492ce697241b9e780995 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76d8a759c2c33d378c48519fa729b407 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2faf3dc392ab1af90db52840871763ce = $(`<div id="html_2faf3dc392ab1af90db52840871763ce" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso do Sul<br>2025-02-17T10:27</div>`)[0];
+                popup_76d8a759c2c33d378c48519fa729b407.setContent(html_2faf3dc392ab1af90db52840871763ce);
+            
+        
+
+        marker_2a8efa09546a7e1d4876273b7badbf16.bindPopup(popup_76d8a759c2c33d378c48519fa729b407)
+        ;
+
+        
+    
+    
+                marker_2a8efa09546a7e1d4876273b7badbf16.setIcon(icon_39d6f65059a5492ce697241b9e780995);
+            
+    
+            var marker_2dc5c8c405476e91b1d9a637a4524e82 = L.marker(
+                [-20.099947, -56.560735],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_54dbeffb156e25f919e5a2995924fe3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fea538eae709df18bd0660da95e0e94 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a70ab7a3d012ea1f83478baf1395920d = $(`<div id="html_a70ab7a3d012ea1f83478baf1395920d" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso do Sul<br>2025-03-02T21:19:35</div>`)[0];
+                popup_8fea538eae709df18bd0660da95e0e94.setContent(html_a70ab7a3d012ea1f83478baf1395920d);
+            
+        
+
+        marker_2dc5c8c405476e91b1d9a637a4524e82.bindPopup(popup_8fea538eae709df18bd0660da95e0e94)
+        ;
+
+        
+    
+    
+                marker_2dc5c8c405476e91b1d9a637a4524e82.setIcon(icon_54dbeffb156e25f919e5a2995924fe3c);
+            
+    
+            var marker_0a682ef149c07ea7e3a7441016a22544 = L.marker(
+                [-16.331408, -56.609489],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_1b0faed7ad9a5c61eec259ab6736b4f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_03fe9e9c2f63148cc87c2097837cdb31 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a56208fae5681cd841e109279142a0bb = $(`<div id="html_a56208fae5681cd841e109279142a0bb" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2025-03-19T21:24</div>`)[0];
+                popup_03fe9e9c2f63148cc87c2097837cdb31.setContent(html_a56208fae5681cd841e109279142a0bb);
+            
+        
+
+        marker_0a682ef149c07ea7e3a7441016a22544.bindPopup(popup_03fe9e9c2f63148cc87c2097837cdb31)
+        ;
+
+        
+    
+    
+                marker_0a682ef149c07ea7e3a7441016a22544.setIcon(icon_1b0faed7ad9a5c61eec259ab6736b4f7);
+            
+    
+            var marker_0a059030e255edaadc1f0ec975e05a05 = L.marker(
+                [-17.30543, -56.710661],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_856656b2e715dd1219ccb43420ef816f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c808d91f0f91c4fa9dfa75336cfa1fd0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_741968d5d20654e225a05854083c5f6c = $(`<div id="html_741968d5d20654e225a05854083c5f6c" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2025-04-12T08:28:02</div>`)[0];
+                popup_c808d91f0f91c4fa9dfa75336cfa1fd0.setContent(html_741968d5d20654e225a05854083c5f6c);
+            
+        
+
+        marker_0a059030e255edaadc1f0ec975e05a05.bindPopup(popup_c808d91f0f91c4fa9dfa75336cfa1fd0)
+        ;
+
+        
+    
+    
+                marker_0a059030e255edaadc1f0ec975e05a05.setIcon(icon_856656b2e715dd1219ccb43420ef816f);
+            
+    
+            var marker_70c0b37af71fde8ef3607d2114f7a558 = L.marker(
+                [-2.622333, -48.767649],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_217a2141da37378a508d14be87b01045 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c38e2aa7afb7d52815f80adcf6c3ef0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3cac02a18e24dd3d3483f5c8d96951d = $(`<div id="html_a3cac02a18e24dd3d3483f5c8d96951d" style="width: 100.0%; height: 100.0%;">Onça-pintada - Pará<br>2025-04-21T07:35:13</div>`)[0];
+                popup_8c38e2aa7afb7d52815f80adcf6c3ef0.setContent(html_a3cac02a18e24dd3d3483f5c8d96951d);
+            
+        
+
+        marker_70c0b37af71fde8ef3607d2114f7a558.bindPopup(popup_8c38e2aa7afb7d52815f80adcf6c3ef0)
+        ;
+
+        
+    
+    
+                marker_70c0b37af71fde8ef3607d2114f7a558.setIcon(icon_217a2141da37378a508d14be87b01045);
+            
+    
+            var marker_0b744d77b83de45648391e0995ca6c1b = L.marker(
+                [-16.933931, -57.486081],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_61381a783d53bd46a7961929eb654c3e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1997e6fe8bbbb691501d4956b5cf5f9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12125ea0ecfab40380cb3934b193d9e6 = $(`<div id="html_12125ea0ecfab40380cb3934b193d9e6" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2025-04-12T16:01</div>`)[0];
+                popup_1997e6fe8bbbb691501d4956b5cf5f9b.setContent(html_12125ea0ecfab40380cb3934b193d9e6);
+            
+        
+
+        marker_0b744d77b83de45648391e0995ca6c1b.bindPopup(popup_1997e6fe8bbbb691501d4956b5cf5f9b)
+        ;
+
+        
+    
+    
+                marker_0b744d77b83de45648391e0995ca6c1b.setIcon(icon_61381a783d53bd46a7961929eb654c3e);
+            
+    
+            var marker_a20b9038a15fe5b1afd8483ee40a598e = L.marker(
+                [-17.385278, -56.627296],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_bfcddff3b3cec97726a81e034823ddea = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_abbd1d0a6bb936c3ebe4919c76dd4da7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4ca9ba4f9cbcf71b8a4b97457edd070c = $(`<div id="html_4ca9ba4f9cbcf71b8a4b97457edd070c" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2025-04-19T14:11</div>`)[0];
+                popup_abbd1d0a6bb936c3ebe4919c76dd4da7.setContent(html_4ca9ba4f9cbcf71b8a4b97457edd070c);
+            
+        
+
+        marker_a20b9038a15fe5b1afd8483ee40a598e.bindPopup(popup_abbd1d0a6bb936c3ebe4919c76dd4da7)
+        ;
+
+        
+    
+    
+                marker_a20b9038a15fe5b1afd8483ee40a598e.setIcon(icon_bfcddff3b3cec97726a81e034823ddea);
+            
+    
+            var marker_5d083043df46121db5999d26e23975af = L.marker(
+                [-17.239688, -56.610233],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_624f25e26da1d2d8c5e50e8865d617a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c22d7bce6caeff8a6cf3b6d43083c614 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a73ab5e1e3367179f5dc5908dad40378 = $(`<div id="html_a73ab5e1e3367179f5dc5908dad40378" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2024-01-19T08:26</div>`)[0];
+                popup_c22d7bce6caeff8a6cf3b6d43083c614.setContent(html_a73ab5e1e3367179f5dc5908dad40378);
+            
+        
+
+        marker_5d083043df46121db5999d26e23975af.bindPopup(popup_c22d7bce6caeff8a6cf3b6d43083c614)
+        ;
+
+        
+    
+    
+                marker_5d083043df46121db5999d26e23975af.setIcon(icon_624f25e26da1d2d8c5e50e8865d617a5);
+            
+    
+            var marker_51e66ad2204cd2884c557b6daeb3a434 = L.marker(
+                [-2.387029, -61.043858],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_c65cd67abe48ce2afa76e492b29cf03c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1bc2a220b79925824b96747bd8bc41e7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_062c5f5444c0b1ba434b989b125f23e7 = $(`<div id="html_062c5f5444c0b1ba434b989b125f23e7" style="width: 100.0%; height: 100.0%;">Onça-pintada - Amazonas<br>2024-01-15T04:50:53</div>`)[0];
+                popup_1bc2a220b79925824b96747bd8bc41e7.setContent(html_062c5f5444c0b1ba434b989b125f23e7);
+            
+        
+
+        marker_51e66ad2204cd2884c557b6daeb3a434.bindPopup(popup_1bc2a220b79925824b96747bd8bc41e7)
+        ;
+
+        
+    
+    
+                marker_51e66ad2204cd2884c557b6daeb3a434.setIcon(icon_c65cd67abe48ce2afa76e492b29cf03c);
+            
+    
+            var marker_b534595361850f3b69721312eff7656b = L.marker(
+                [-16.904001, -48.517231],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_4101b5c845f504fabd1daf182cfd077e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e74a71a1c5ae5a8beeddd70af0dffaa6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_33a9a5faeb02d35c70a0aad7e2c777e3 = $(`<div id="html_33a9a5faeb02d35c70a0aad7e2c777e3" style="width: 100.0%; height: 100.0%;">Onça-pintada - Goiás<br>2024-02-08T09:00</div>`)[0];
+                popup_e74a71a1c5ae5a8beeddd70af0dffaa6.setContent(html_33a9a5faeb02d35c70a0aad7e2c777e3);
+            
+        
+
+        marker_b534595361850f3b69721312eff7656b.bindPopup(popup_e74a71a1c5ae5a8beeddd70af0dffaa6)
+        ;
+
+        
+    
+    
+                marker_b534595361850f3b69721312eff7656b.setIcon(icon_4101b5c845f504fabd1daf182cfd077e);
+            
+    
+            var marker_5058e800edd57039a2e0a452c51b46f5 = L.marker(
+                [-17.2557, -56.633028],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_f0302937bb92cc7f2fa5c4549cf16476 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_84506a7a70d8aaf0ce979d9a5509ddf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6d917ba6581ded9f276172230830db51 = $(`<div id="html_6d917ba6581ded9f276172230830db51" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2024-02-28T17:20</div>`)[0];
+                popup_84506a7a70d8aaf0ce979d9a5509ddf9.setContent(html_6d917ba6581ded9f276172230830db51);
+            
+        
+
+        marker_5058e800edd57039a2e0a452c51b46f5.bindPopup(popup_84506a7a70d8aaf0ce979d9a5509ddf9)
+        ;
+
+        
+    
+    
+                marker_5058e800edd57039a2e0a452c51b46f5.setIcon(icon_f0302937bb92cc7f2fa5c4549cf16476);
+            
+    
+            var marker_8acea2d6d709ed883ceb331934a88a7a = L.marker(
+                [-17.229828, -56.6551],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_df82945bf3151af3b470afd9d7acf2e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7475c8418639b994846abf03e7143a0d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fefda6953d8cfeb3083de8f0c468fa54 = $(`<div id="html_fefda6953d8cfeb3083de8f0c468fa54" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2024-02-28T17:14</div>`)[0];
+                popup_7475c8418639b994846abf03e7143a0d.setContent(html_fefda6953d8cfeb3083de8f0c468fa54);
+            
+        
+
+        marker_8acea2d6d709ed883ceb331934a88a7a.bindPopup(popup_7475c8418639b994846abf03e7143a0d)
+        ;
+
+        
+    
+    
+                marker_8acea2d6d709ed883ceb331934a88a7a.setIcon(icon_df82945bf3151af3b470afd9d7acf2e7);
+            
+    
+            var marker_588d75802911a2c1213a4e0d266e431c = L.marker(
+                [-17.307809, -56.766599],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_df0a7c17eb448b48e588268e1ba4d115 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d201642073fa542cb43cfdc9664d80f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_56bcb7c8f2c542179e0862d358091ffc = $(`<div id="html_56bcb7c8f2c542179e0862d358091ffc" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso<br>2024-03-01T11:32</div>`)[0];
+                popup_0d201642073fa542cb43cfdc9664d80f.setContent(html_56bcb7c8f2c542179e0862d358091ffc);
+            
+        
+
+        marker_588d75802911a2c1213a4e0d266e431c.bindPopup(popup_0d201642073fa542cb43cfdc9664d80f)
+        ;
+
+        
+    
+    
+                marker_588d75802911a2c1213a4e0d266e431c.setIcon(icon_df0a7c17eb448b48e588268e1ba4d115);
+            
+    
+            var marker_e891ee97517143b22ef4bc5532c4b63c = L.marker(
+                [-20.164127, -56.542522],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_94957f77b3ce82a304499123e1220a51 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4be35529f7d8fdfc226c992a30ceb44d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0e016255f3b977b3886a9215a5b653e4 = $(`<div id="html_0e016255f3b977b3886a9215a5b653e4" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso do Sul<br>2024-04-03T16:42:52</div>`)[0];
+                popup_4be35529f7d8fdfc226c992a30ceb44d.setContent(html_0e016255f3b977b3886a9215a5b653e4);
+            
+        
+
+        marker_e891ee97517143b22ef4bc5532c4b63c.bindPopup(popup_4be35529f7d8fdfc226c992a30ceb44d)
+        ;
+
+        
+    
+    
+                marker_e891ee97517143b22ef4bc5532c4b63c.setIcon(icon_94957f77b3ce82a304499123e1220a51);
+            
+    
+            var marker_9c9a4667c5f09b9cb75d523d68237192 = L.marker(
+                [2.056935, -50.429887],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_17ceb390205837d78721af52915e00e4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b5155365573dc6ebdb2173083f70a846 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1de104bbdcacd6f9255af79ff53ed387 = $(`<div id="html_1de104bbdcacd6f9255af79ff53ed387" style="width: 100.0%; height: 100.0%;">Onça-pintada - Amapá<br>2024-04-27T12:09:14</div>`)[0];
+                popup_b5155365573dc6ebdb2173083f70a846.setContent(html_1de104bbdcacd6f9255af79ff53ed387);
+            
+        
+
+        marker_9c9a4667c5f09b9cb75d523d68237192.bindPopup(popup_b5155365573dc6ebdb2173083f70a846)
+        ;
+
+        
+    
+    
+                marker_9c9a4667c5f09b9cb75d523d68237192.setIcon(icon_17ceb390205837d78721af52915e00e4);
+            
+    
+            var marker_2d8b2a0404d28bd152e7a8fd68e08fc0 = L.marker(
+                [-3.057944, -60.139879],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_b54af26d5cf440accf54c7195341747b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a4463c9faae6c1fb0821a9b3e4e0b0e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2c59bdfb7f73ffbeb663f4e590bed4b = $(`<div id="html_b2c59bdfb7f73ffbeb663f4e590bed4b" style="width: 100.0%; height: 100.0%;">Onça-pintada - Amazonas<br>2024-04-30T14:12</div>`)[0];
+                popup_3a4463c9faae6c1fb0821a9b3e4e0b0e.setContent(html_b2c59bdfb7f73ffbeb663f4e590bed4b);
+            
+        
+
+        marker_2d8b2a0404d28bd152e7a8fd68e08fc0.bindPopup(popup_3a4463c9faae6c1fb0821a9b3e4e0b0e)
+        ;
+
+        
+    
+    
+                marker_2d8b2a0404d28bd152e7a8fd68e08fc0.setIcon(icon_b54af26d5cf440accf54c7195341747b);
+            
+    
+            var marker_8f2282cd905c8de33c21d262d3f0951c = L.marker(
+                [-19.573527, -57.169275],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_5f0dc51908c9b5c2c48bbc8e77efc00b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b881291627e8dce8526c1bb76f0ee274 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_770e0075850320634e6d26758750a53f = $(`<div id="html_770e0075850320634e6d26758750a53f" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso do Sul<br>2024-05-21T15:23:47</div>`)[0];
+                popup_b881291627e8dce8526c1bb76f0ee274.setContent(html_770e0075850320634e6d26758750a53f);
+            
+        
+
+        marker_8f2282cd905c8de33c21d262d3f0951c.bindPopup(popup_b881291627e8dce8526c1bb76f0ee274)
+        ;
+
+        
+    
+    
+                marker_8f2282cd905c8de33c21d262d3f0951c.setIcon(icon_5f0dc51908c9b5c2c48bbc8e77efc00b);
+            
+    
+            var marker_f9aab41fc8c238863ccb66454c1e7c67 = L.marker(
+                [-25.573228, -54.291791],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_d470440eda77a46eea742d0e37e854e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec399f38ca46a32de7233b8b162e45ae = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dcb94bba139616ec3cd61e6cf4ae0550 = $(`<div id="html_dcb94bba139616ec3cd61e6cf4ae0550" style="width: 100.0%; height: 100.0%;">Onça-pintada - Paraná<br>2024-05-26T15:52:28</div>`)[0];
+                popup_ec399f38ca46a32de7233b8b162e45ae.setContent(html_dcb94bba139616ec3cd61e6cf4ae0550);
+            
+        
+
+        marker_f9aab41fc8c238863ccb66454c1e7c67.bindPopup(popup_ec399f38ca46a32de7233b8b162e45ae)
+        ;
+
+        
+    
+    
+                marker_f9aab41fc8c238863ccb66454c1e7c67.setIcon(icon_d470440eda77a46eea742d0e37e854e5);
+            
+    
+            var marker_a853206f0757e917eab5cac2e23c3ee1 = L.marker(
+                [-18.035406, -57.477736],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_11f9c7ed3f9b46bc1fbbed19ade29fb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eb65eaca770d3b0db039e15d5fcd74f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3aee2a299d746025b4984ead1e8bf156 = $(`<div id="html_3aee2a299d746025b4984ead1e8bf156" style="width: 100.0%; height: 100.0%;">Onça-pintada - Mato Grosso do Sul<br>2024-05-06T07:11</div>`)[0];
+                popup_8eb65eaca770d3b0db039e15d5fcd74f.setContent(html_3aee2a299d746025b4984ead1e8bf156);
+            
+        
+
+        marker_a853206f0757e917eab5cac2e23c3ee1.bindPopup(popup_8eb65eaca770d3b0db039e15d5fcd74f)
+        ;
+
+        
+    
+    
+                marker_a853206f0757e917eab5cac2e23c3ee1.setIcon(icon_11f9c7ed3f9b46bc1fbbed19ade29fb8);
+            
+    
+            var marker_e35328047764ef640c8d2e3e7d24bcce = L.marker(
+                [-22.493575, -43.047567],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_ec661b24497f0187f0e51cfe83b3c951 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b73fd4a8ec76938021d1199eb8266e8f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26a4ab332a6e1baf0fb1b1ca6abf2c4e = $(`<div id="html_26a4ab332a6e1baf0fb1b1ca6abf2c4e" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2025-01-22T17:37</div>`)[0];
+                popup_b73fd4a8ec76938021d1199eb8266e8f.setContent(html_26a4ab332a6e1baf0fb1b1ca6abf2c4e);
+            
+        
+
+        marker_e35328047764ef640c8d2e3e7d24bcce.bindPopup(popup_b73fd4a8ec76938021d1199eb8266e8f)
+        ;
+
+        
+    
+    
+                marker_e35328047764ef640c8d2e3e7d24bcce.setIcon(icon_ec661b24497f0187f0e51cfe83b3c951);
+            
+    
+            var marker_834d94347bd15e9f1fa591c79f8ef4f6 = L.marker(
+                [-22.616955, -42.432893],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_2fd16023c94f6b30d251cdeb7f6892f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6a10925d3db48545a7f117fa6a7bc4b2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6a67d1a7e4f213e1cfcab3952bbe3329 = $(`<div id="html_6a67d1a7e4f213e1cfcab3952bbe3329" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2025-01-23T09:33:54</div>`)[0];
+                popup_6a10925d3db48545a7f117fa6a7bc4b2.setContent(html_6a67d1a7e4f213e1cfcab3952bbe3329);
+            
+        
+
+        marker_834d94347bd15e9f1fa591c79f8ef4f6.bindPopup(popup_6a10925d3db48545a7f117fa6a7bc4b2)
+        ;
+
+        
+    
+    
+                marker_834d94347bd15e9f1fa591c79f8ef4f6.setIcon(icon_2fd16023c94f6b30d251cdeb7f6892f1);
+            
+    
+            var marker_80e599fbab7af081a427d9c4fa22ae4d = L.marker(
+                [-22.433593, -43.074026],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_63d1b6fe352eae5f998b12dcee71310e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b4db6f94879f2523d76420c24bc8f65d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dae481b8a42b67e5ed8cc13493f381a = $(`<div id="html_2dae481b8a42b67e5ed8cc13493f381a" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2025-02-23T07:04</div>`)[0];
+                popup_b4db6f94879f2523d76420c24bc8f65d.setContent(html_2dae481b8a42b67e5ed8cc13493f381a);
+            
+        
+
+        marker_80e599fbab7af081a427d9c4fa22ae4d.bindPopup(popup_b4db6f94879f2523d76420c24bc8f65d)
+        ;
+
+        
+    
+    
+                marker_80e599fbab7af081a427d9c4fa22ae4d.setIcon(icon_63d1b6fe352eae5f998b12dcee71310e);
+            
+    
+            var marker_1d6af43a476a3b6ac37596525b90f67f = L.marker(
+                [-22.504642, -42.249344],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_cea404ac0506fa133581442d2ec73bbd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8f79842d205b8048e1360861f42b733f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a0204442f110b7e8c930296a66e649bf = $(`<div id="html_a0204442f110b7e8c930296a66e649bf" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2025-02-26T14:11:59</div>`)[0];
+                popup_8f79842d205b8048e1360861f42b733f.setContent(html_a0204442f110b7e8c930296a66e649bf);
+            
+        
+
+        marker_1d6af43a476a3b6ac37596525b90f67f.bindPopup(popup_8f79842d205b8048e1360861f42b733f)
+        ;
+
+        
+    
+    
+                marker_1d6af43a476a3b6ac37596525b90f67f.setIcon(icon_cea404ac0506fa133581442d2ec73bbd);
+            
+    
+            var marker_22950c2f7cb83117663bfaf773c493ce = L.marker(
+                [-23.123365, -44.673235],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_0b554ef85b0b9c45c4e528cedfc3bbf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a730abe6c06dcd9b7768bb5d3aa29df5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec76cbaa2baddc1a5c89acdd24b44d00 = $(`<div id="html_ec76cbaa2baddc1a5c89acdd24b44d00" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2025-04-01T11:21:14</div>`)[0];
+                popup_a730abe6c06dcd9b7768bb5d3aa29df5.setContent(html_ec76cbaa2baddc1a5c89acdd24b44d00);
+            
+        
+
+        marker_22950c2f7cb83117663bfaf773c493ce.bindPopup(popup_a730abe6c06dcd9b7768bb5d3aa29df5)
+        ;
+
+        
+    
+    
+                marker_22950c2f7cb83117663bfaf773c493ce.setIcon(icon_0b554ef85b0b9c45c4e528cedfc3bbf6);
+            
+    
+            var marker_e8f7d070b345ee4ec6ccceacbcce48d6 = L.marker(
+                [-22.62716, -42.039191],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_10613f1f232b9692001c66c2720a9dac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0199c89260337610ca7f5f022064be4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a85e533617922b244df2aa71d1484b40 = $(`<div id="html_a85e533617922b244df2aa71d1484b40" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-02-18T21:36</div>`)[0];
+                popup_d0199c89260337610ca7f5f022064be4.setContent(html_a85e533617922b244df2aa71d1484b40);
+            
+        
+
+        marker_e8f7d070b345ee4ec6ccceacbcce48d6.bindPopup(popup_d0199c89260337610ca7f5f022064be4)
+        ;
+
+        
+    
+    
+                marker_e8f7d070b345ee4ec6ccceacbcce48d6.setIcon(icon_10613f1f232b9692001c66c2720a9dac);
+            
+    
+            var marker_9b6b51e61056982c5af3141aabb5d8b9 = L.marker(
+                [-22.580864, -42.027118],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_46d90f69abeeda83149f36f30252ea02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_527b2a2a2d864c7f281ed45ea16b1dbe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31c3f38c6e4e3436eefdb05ff99a8f06 = $(`<div id="html_31c3f38c6e4e3436eefdb05ff99a8f06" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-10-30T10:10</div>`)[0];
+                popup_527b2a2a2d864c7f281ed45ea16b1dbe.setContent(html_31c3f38c6e4e3436eefdb05ff99a8f06);
+            
+        
+
+        marker_9b6b51e61056982c5af3141aabb5d8b9.bindPopup(popup_527b2a2a2d864c7f281ed45ea16b1dbe)
+        ;
+
+        
+    
+    
+                marker_9b6b51e61056982c5af3141aabb5d8b9.setIcon(icon_46d90f69abeeda83149f36f30252ea02);
+            
+    
+            var marker_788fae0c0ae459547d56a63ad052142f = L.marker(
+                [-22.576333, -42.355921],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_1aff82fa7e235ee4f859cf62a70dbe89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3cc2df8f122187db2490836bac4ede90 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32ba8a83c5cb39a81b5e491d6ae94dd0 = $(`<div id="html_32ba8a83c5cb39a81b5e491d6ae94dd0" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T08:42</div>`)[0];
+                popup_3cc2df8f122187db2490836bac4ede90.setContent(html_32ba8a83c5cb39a81b5e491d6ae94dd0);
+            
+        
+
+        marker_788fae0c0ae459547d56a63ad052142f.bindPopup(popup_3cc2df8f122187db2490836bac4ede90)
+        ;
+
+        
+    
+    
+                marker_788fae0c0ae459547d56a63ad052142f.setIcon(icon_1aff82fa7e235ee4f859cf62a70dbe89);
+            
+    
+            var marker_5745392ecd56cc0e90bc6c2558ebc92e = L.marker(
+                [-22.465389, -42.242138],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_4826b07be8e85bb78f7861f1ebf1f386 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_298a322f9a295b31f7eee49719b7208f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a3f8404037464bf1301ba65d00c1dda0 = $(`<div id="html_a3f8404037464bf1301ba65d00c1dda0" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T08:48</div>`)[0];
+                popup_298a322f9a295b31f7eee49719b7208f.setContent(html_a3f8404037464bf1301ba65d00c1dda0);
+            
+        
+
+        marker_5745392ecd56cc0e90bc6c2558ebc92e.bindPopup(popup_298a322f9a295b31f7eee49719b7208f)
+        ;
+
+        
+    
+    
+                marker_5745392ecd56cc0e90bc6c2558ebc92e.setIcon(icon_4826b07be8e85bb78f7861f1ebf1f386);
+            
+    
+            var marker_076136ea5bdd90cf05e6528e7d4036c6 = L.marker(
+                [-22.554161, -42.355697],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_de383d7d00c86e71d617c801c0fef575 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_20aa1bf2c4374c3494242542a5853950 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d8746b0992f3de4b4725a9db3e47081e = $(`<div id="html_d8746b0992f3de4b4725a9db3e47081e" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T08:52</div>`)[0];
+                popup_20aa1bf2c4374c3494242542a5853950.setContent(html_d8746b0992f3de4b4725a9db3e47081e);
+            
+        
+
+        marker_076136ea5bdd90cf05e6528e7d4036c6.bindPopup(popup_20aa1bf2c4374c3494242542a5853950)
+        ;
+
+        
+    
+    
+                marker_076136ea5bdd90cf05e6528e7d4036c6.setIcon(icon_de383d7d00c86e71d617c801c0fef575);
+            
+    
+            var marker_fc5c1e02b4adf684aef4da210784dc29 = L.marker(
+                [-22.521382, -42.360861],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_745cd4f5a503dc1ccaf42f5fa7d199bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea17c46343c6c23f6111377742dcc9c6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0acce7a6407bd5252553c137d2476e99 = $(`<div id="html_0acce7a6407bd5252553c137d2476e99" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T08:58</div>`)[0];
+                popup_ea17c46343c6c23f6111377742dcc9c6.setContent(html_0acce7a6407bd5252553c137d2476e99);
+            
+        
+
+        marker_fc5c1e02b4adf684aef4da210784dc29.bindPopup(popup_ea17c46343c6c23f6111377742dcc9c6)
+        ;
+
+        
+    
+    
+                marker_fc5c1e02b4adf684aef4da210784dc29.setIcon(icon_745cd4f5a503dc1ccaf42f5fa7d199bc);
+            
+    
+            var marker_69acf74bbbb3b697ef4b0cb847c5d339 = L.marker(
+                [-22.406546, -42.223569],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_cfe007afe82b08cfda7dd9e63591086a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c1041ad2d86606eb4c8483402f096759 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a62fdbada2e83b9ea8f1da5245fb3256 = $(`<div id="html_a62fdbada2e83b9ea8f1da5245fb3256" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T09:00</div>`)[0];
+                popup_c1041ad2d86606eb4c8483402f096759.setContent(html_a62fdbada2e83b9ea8f1da5245fb3256);
+            
+        
+
+        marker_69acf74bbbb3b697ef4b0cb847c5d339.bindPopup(popup_c1041ad2d86606eb4c8483402f096759)
+        ;
+
+        
+    
+    
+                marker_69acf74bbbb3b697ef4b0cb847c5d339.setIcon(icon_cfe007afe82b08cfda7dd9e63591086a);
+            
+    
+            var marker_7b6d68b1243315983598c84fc6d6bddd = L.marker(
+                [-22.516621, -42.24697],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_34ed2f48e29d91548c84c9793936f39d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7011b09164437c58338699e94162def6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a27b6404bb7fc1faec5913a6cdb4043a = $(`<div id="html_a27b6404bb7fc1faec5913a6cdb4043a" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T09:06</div>`)[0];
+                popup_7011b09164437c58338699e94162def6.setContent(html_a27b6404bb7fc1faec5913a6cdb4043a);
+            
+        
+
+        marker_7b6d68b1243315983598c84fc6d6bddd.bindPopup(popup_7011b09164437c58338699e94162def6)
+        ;
+
+        
+    
+    
+                marker_7b6d68b1243315983598c84fc6d6bddd.setIcon(icon_34ed2f48e29d91548c84c9793936f39d);
+            
+    
+            var marker_f476df7013a242b7127bdd1320159948 = L.marker(
+                [-22.547176, -42.362795],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_c9abf3065a37b11edaf07e97cee91e00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7a2a52e080c625a9594d19edcda225b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d14b7722fec268fee6732cc7d16b931 = $(`<div id="html_1d14b7722fec268fee6732cc7d16b931" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T09:13</div>`)[0];
+                popup_7a2a52e080c625a9594d19edcda225b3.setContent(html_1d14b7722fec268fee6732cc7d16b931);
+            
+        
+
+        marker_f476df7013a242b7127bdd1320159948.bindPopup(popup_7a2a52e080c625a9594d19edcda225b3)
+        ;
+
+        
+    
+    
+                marker_f476df7013a242b7127bdd1320159948.setIcon(icon_c9abf3065a37b11edaf07e97cee91e00);
+            
+    
+            var marker_8381ba1895756170f148a6fecbe5086c = L.marker(
+                [-22.424515, -42.380115],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_f7062c33445d00985cd58d0f55b9196f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_101b4710a606e164f82b83650d5af143 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7dfeb3b6d538867ffe748e3847f345ff = $(`<div id="html_7dfeb3b6d538867ffe748e3847f345ff" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2024-11-09T09:14</div>`)[0];
+                popup_101b4710a606e164f82b83650d5af143.setContent(html_7dfeb3b6d538867ffe748e3847f345ff);
+            
+        
+
+        marker_8381ba1895756170f148a6fecbe5086c.bindPopup(popup_101b4710a606e164f82b83650d5af143)
+        ;
+
+        
+    
+    
+                marker_8381ba1895756170f148a6fecbe5086c.setIcon(icon_f7062c33445d00985cd58d0f55b9196f);
+            
+    
+            var marker_1c928887ec7943052f4316352d1987f0 = L.marker(
+                [-22.865899, -41.887458],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_00cabdd6699d8f9b0c7deef750c82c17 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00852126d0ffea62fcb9b32a6129444f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7076a1e3912382756ef01c8f48458e2 = $(`<div id="html_b7076a1e3912382756ef01c8f48458e2" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2023-01-08T10:30:33</div>`)[0];
+                popup_00852126d0ffea62fcb9b32a6129444f.setContent(html_b7076a1e3912382756ef01c8f48458e2);
+            
+        
+
+        marker_1c928887ec7943052f4316352d1987f0.bindPopup(popup_00852126d0ffea62fcb9b32a6129444f)
+        ;
+
+        
+    
+    
+                marker_1c928887ec7943052f4316352d1987f0.setIcon(icon_00cabdd6699d8f9b0c7deef750c82c17);
+            
+    
+            var marker_fce172b20353ada2bdca241f95391f15 = L.marker(
+                [-22.684496, -42.535475],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_1a4c8b069228447f0224a34ca2c5f9f1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd034c9b463104ed08c22a40ad632656 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68479a8b129ed934173bfb66aa677c76 = $(`<div id="html_68479a8b129ed934173bfb66aa677c76" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2023-01-10T14:10:34</div>`)[0];
+                popup_cd034c9b463104ed08c22a40ad632656.setContent(html_68479a8b129ed934173bfb66aa677c76);
+            
+        
+
+        marker_fce172b20353ada2bdca241f95391f15.bindPopup(popup_cd034c9b463104ed08c22a40ad632656)
+        ;
+
+        
+    
+    
+                marker_fce172b20353ada2bdca241f95391f15.setIcon(icon_1a4c8b069228447f0224a34ca2c5f9f1);
+            
+    
+            var marker_87b2d04a5a400349164f29070a31cb9d = L.marker(
+                [-22.602406, -42.087806],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_87f6bf990a9954ad0f436eea11007a02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_99c353b97f6330c0dca898aa983bec11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_641fac3e92983e04aae3bf0458364d4c = $(`<div id="html_641fac3e92983e04aae3bf0458364d4c" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2023-01-13T13:55</div>`)[0];
+                popup_99c353b97f6330c0dca898aa983bec11.setContent(html_641fac3e92983e04aae3bf0458364d4c);
+            
+        
+
+        marker_87b2d04a5a400349164f29070a31cb9d.bindPopup(popup_99c353b97f6330c0dca898aa983bec11)
+        ;
+
+        
+    
+    
+                marker_87b2d04a5a400349164f29070a31cb9d.setIcon(icon_87f6bf990a9954ad0f436eea11007a02);
+            
+    
+            var marker_400636eb708280765295907aafa6e686 = L.marker(
+                [-22.554478, -42.394933],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_ba010ec6976ad2a71c2da32015d4fb56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ac6558b05ea32e3e1ec6554d02f700d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_af66fa6fcf34f763e5e7e9d5d6d22b53 = $(`<div id="html_af66fa6fcf34f763e5e7e9d5d6d22b53" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2023-01-05T10:44</div>`)[0];
+                popup_8ac6558b05ea32e3e1ec6554d02f700d.setContent(html_af66fa6fcf34f763e5e7e9d5d6d22b53);
+            
+        
+
+        marker_400636eb708280765295907aafa6e686.bindPopup(popup_8ac6558b05ea32e3e1ec6554d02f700d)
+        ;
+
+        
+    
+    
+                marker_400636eb708280765295907aafa6e686.setIcon(icon_ba010ec6976ad2a71c2da32015d4fb56);
+            
+    
+            var marker_3185f6236eaa7aeafbd8255eac6ec756 = L.marker(
+                [-22.749949, -42.417728],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_70e559a77110d2c41159078921cb01e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e4132b506a2b727d3d2848e248f93722 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fac27f3fd0edc7443bfc89fb5aa4c740 = $(`<div id="html_fac27f3fd0edc7443bfc89fb5aa4c740" style="width: 100.0%; height: 100.0%;">Mico-leão-dourado - Rio de Janeiro<br>2023-01-22T14:58</div>`)[0];
+                popup_e4132b506a2b727d3d2848e248f93722.setContent(html_fac27f3fd0edc7443bfc89fb5aa4c740);
+            
+        
+
+        marker_3185f6236eaa7aeafbd8255eac6ec756.bindPopup(popup_e4132b506a2b727d3d2848e248f93722)
+        ;
+
+        
+    
+    
+                marker_3185f6236eaa7aeafbd8255eac6ec756.setIcon(icon_70e559a77110d2c41159078921cb01e1);
+            
+    
+            var marker_ffc6b2d76ef8dd5adc65dc448c204103 = L.marker(
+                [-20.399564, -40.273027],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_3dc106aeb650a31c072a091271e94542 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a20efec852df5b9bbb3d4104e1aa5e2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c623524cd71b26d612b264782fa900ca = $(`<div id="html_c623524cd71b26d612b264782fa900ca" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-03T09:52</div>`)[0];
+                popup_a20efec852df5b9bbb3d4104e1aa5e2e.setContent(html_c623524cd71b26d612b264782fa900ca);
+            
+        
+
+        marker_ffc6b2d76ef8dd5adc65dc448c204103.bindPopup(popup_a20efec852df5b9bbb3d4104e1aa5e2e)
+        ;
+
+        
+    
+    
+                marker_ffc6b2d76ef8dd5adc65dc448c204103.setIcon(icon_3dc106aeb650a31c072a091271e94542);
+            
+    
+            var marker_445e76dde7d54fabf40c41452a22c193 = L.marker(
+                [-20.226712, -40.365056],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_e20f8b934ff20fed4c246d7499cc6b10 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1130ab43c9c7ad29d5e1ff865387e193 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3a9f37eb8dd4baad67f85b4ed0219466 = $(`<div id="html_3a9f37eb8dd4baad67f85b4ed0219466" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-06T11:37</div>`)[0];
+                popup_1130ab43c9c7ad29d5e1ff865387e193.setContent(html_3a9f37eb8dd4baad67f85b4ed0219466);
+            
+        
+
+        marker_445e76dde7d54fabf40c41452a22c193.bindPopup(popup_1130ab43c9c7ad29d5e1ff865387e193)
+        ;
+
+        
+    
+    
+                marker_445e76dde7d54fabf40c41452a22c193.setIcon(icon_e20f8b934ff20fed4c246d7499cc6b10);
+            
+    
+            var marker_4aacc26c30c1f51ec1a00685f91141a8 = L.marker(
+                [-17.836564, -38.738237],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_19bf6939b5a60366a66706ce2306724d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_463f0e334a7b4f8e3842a1c5090c6e69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e6e642e1809ac35365824815c640e50a = $(`<div id="html_e6e642e1809ac35365824815c640e50a" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Bahia<br>2025-01-02</div>`)[0];
+                popup_463f0e334a7b4f8e3842a1c5090c6e69.setContent(html_e6e642e1809ac35365824815c640e50a);
+            
+        
+
+        marker_4aacc26c30c1f51ec1a00685f91141a8.bindPopup(popup_463f0e334a7b4f8e3842a1c5090c6e69)
+        ;
+
+        
+    
+    
+                marker_4aacc26c30c1f51ec1a00685f91141a8.setIcon(icon_19bf6939b5a60366a66706ce2306724d);
+            
+    
+            var marker_d10a758aab635831f03610698b4c42a6 = L.marker(
+                [-17.861555, -38.635144],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_6a5952c25fddc3000a84108a7e2ba38a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8681aacb2902cf23ff3af4ed870a165f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_024cda080b00bd9085e9bdca52e1854a = $(`<div id="html_024cda080b00bd9085e9bdca52e1854a" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Bahia<br>2025-01-02</div>`)[0];
+                popup_8681aacb2902cf23ff3af4ed870a165f.setContent(html_024cda080b00bd9085e9bdca52e1854a);
+            
+        
+
+        marker_d10a758aab635831f03610698b4c42a6.bindPopup(popup_8681aacb2902cf23ff3af4ed870a165f)
+        ;
+
+        
+    
+    
+                marker_d10a758aab635831f03610698b4c42a6.setIcon(icon_6a5952c25fddc3000a84108a7e2ba38a);
+            
+    
+            var marker_d3766097e08131fe7cf0724d34e2b45a = L.marker(
+                [-17.930823, -38.668136],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_070070851d3931131bd50ddfe39b6738 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c8df1ddc164b01f948181b83e83c48f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cad08c3c6bf4985fe28dc849cba0420a = $(`<div id="html_cad08c3c6bf4985fe28dc849cba0420a" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Bahia<br>2025-01-02</div>`)[0];
+                popup_3c8df1ddc164b01f948181b83e83c48f.setContent(html_cad08c3c6bf4985fe28dc849cba0420a);
+            
+        
+
+        marker_d3766097e08131fe7cf0724d34e2b45a.bindPopup(popup_3c8df1ddc164b01f948181b83e83c48f)
+        ;
+
+        
+    
+    
+                marker_d3766097e08131fe7cf0724d34e2b45a.setIcon(icon_070070851d3931131bd50ddfe39b6738);
+            
+    
+            var marker_556b4e63cd911ce2f8f67903ccbe54f3 = L.marker(
+                [-20.364834, -40.278125],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_d47cfc4aa290dc42a6420e249ce460a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d429a2b5dca41fcf34765f8b1cb8090a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8eef5db25e95545381504ae066be4260 = $(`<div id="html_8eef5db25e95545381504ae066be4260" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-15T21:38</div>`)[0];
+                popup_d429a2b5dca41fcf34765f8b1cb8090a.setContent(html_8eef5db25e95545381504ae066be4260);
+            
+        
+
+        marker_556b4e63cd911ce2f8f67903ccbe54f3.bindPopup(popup_d429a2b5dca41fcf34765f8b1cb8090a)
+        ;
+
+        
+    
+    
+                marker_556b4e63cd911ce2f8f67903ccbe54f3.setIcon(icon_d47cfc4aa290dc42a6420e249ce460a9);
+            
+    
+            var marker_41409e1bc57431e6fb8c649e0ec35e3d = L.marker(
+                [-20.692736, -40.596011],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_b81cb1473ccdc3dbcb621f9ca4461931 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cbaab346ad16b5801efe9d0023fd8094 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4c7bb7b2cd5ba2df45bc5ed556d60f2f = $(`<div id="html_4c7bb7b2cd5ba2df45bc5ed556d60f2f" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-22T23:58</div>`)[0];
+                popup_cbaab346ad16b5801efe9d0023fd8094.setContent(html_4c7bb7b2cd5ba2df45bc5ed556d60f2f);
+            
+        
+
+        marker_41409e1bc57431e6fb8c649e0ec35e3d.bindPopup(popup_cbaab346ad16b5801efe9d0023fd8094)
+        ;
+
+        
+    
+    
+                marker_41409e1bc57431e6fb8c649e0ec35e3d.setIcon(icon_b81cb1473ccdc3dbcb621f9ca4461931);
+            
+    
+            var marker_e9faebbdf36a05e311e353690bdf1729 = L.marker(
+                [-22.887424, -42.118178],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_c0bcbedcb3495b18eeb80be1f71d56e1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_58c863e1a305741643210509e94de853 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_31821aa6f147e0fcd4dfc5db3d08f428 = $(`<div id="html_31821aa6f147e0fcd4dfc5db3d08f428" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Rio de Janeiro<br>2025-01-02</div>`)[0];
+                popup_58c863e1a305741643210509e94de853.setContent(html_31821aa6f147e0fcd4dfc5db3d08f428);
+            
+        
+
+        marker_e9faebbdf36a05e311e353690bdf1729.bindPopup(popup_58c863e1a305741643210509e94de853)
+        ;
+
+        
+    
+    
+                marker_e9faebbdf36a05e311e353690bdf1729.setIcon(icon_c0bcbedcb3495b18eeb80be1f71d56e1);
+            
+    
+            var marker_f25ad4a3bde7b20a34c4d3429f9516b5 = L.marker(
+                [-23.227483, -44.812303],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_135464345a2752354422b0eb5376816e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d61758ec3a0472bcbc353349cc8fc57 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c8ab627e65de6ec6d2fdb2f02522e61b = $(`<div id="html_c8ab627e65de6ec6d2fdb2f02522e61b" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - São Paulo<br>2025-01-24T12:40</div>`)[0];
+                popup_2d61758ec3a0472bcbc353349cc8fc57.setContent(html_c8ab627e65de6ec6d2fdb2f02522e61b);
+            
+        
+
+        marker_f25ad4a3bde7b20a34c4d3429f9516b5.bindPopup(popup_2d61758ec3a0472bcbc353349cc8fc57)
+        ;
+
+        
+    
+    
+                marker_f25ad4a3bde7b20a34c4d3429f9516b5.setIcon(icon_135464345a2752354422b0eb5376816e);
+            
+    
+            var marker_0d9f3af599575b4d219f5a2a5fcf78c0 = L.marker(
+                [-23.239962, -44.837382],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_61910ddcf045810316e67d0378844d6f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_81dc700a276f82ed4d6de2b5b2189cd7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dff4393df3e97b6c9d62537bf7906c4e = $(`<div id="html_dff4393df3e97b6c9d62537bf7906c4e" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - São Paulo<br>2025-01-24T12:06:19</div>`)[0];
+                popup_81dc700a276f82ed4d6de2b5b2189cd7.setContent(html_dff4393df3e97b6c9d62537bf7906c4e);
+            
+        
+
+        marker_0d9f3af599575b4d219f5a2a5fcf78c0.bindPopup(popup_81dc700a276f82ed4d6de2b5b2189cd7)
+        ;
+
+        
+    
+    
+                marker_0d9f3af599575b4d219f5a2a5fcf78c0.setIcon(icon_61910ddcf045810316e67d0378844d6f);
+            
+    
+            var marker_1af3f4241c5737fd708c67e92f25c43a = L.marker(
+                [-22.989671, -42.003929],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_463f5c984141f1328ea51b9cd982b0b4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_092412642f55d27f50e4cc1b98bf3940 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23a73f9ebc4e65ef60b41b7a581dc660 = $(`<div id="html_23a73f9ebc4e65ef60b41b7a581dc660" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Rio de Janeiro<br>2025-01-25T11:35:39</div>`)[0];
+                popup_092412642f55d27f50e4cc1b98bf3940.setContent(html_23a73f9ebc4e65ef60b41b7a581dc660);
+            
+        
+
+        marker_1af3f4241c5737fd708c67e92f25c43a.bindPopup(popup_092412642f55d27f50e4cc1b98bf3940)
+        ;
+
+        
+    
+    
+                marker_1af3f4241c5737fd708c67e92f25c43a.setIcon(icon_463f5c984141f1328ea51b9cd982b0b4);
+            
+    
+            var marker_8fc9bca1adfc29504b425896bef12afe = L.marker(
+                [-22.849246, -42.03217],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_df41e7257750ed6e61d0932e1588f1d9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d3efe68a3fce9bd113a502c17fd47eb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3952bbf884f11623c1e9a7bbb51bfe1a = $(`<div id="html_3952bbf884f11623c1e9a7bbb51bfe1a" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Rio de Janeiro<br>2025-01-25T11:10</div>`)[0];
+                popup_0d3efe68a3fce9bd113a502c17fd47eb.setContent(html_3952bbf884f11623c1e9a7bbb51bfe1a);
+            
+        
+
+        marker_8fc9bca1adfc29504b425896bef12afe.bindPopup(popup_0d3efe68a3fce9bd113a502c17fd47eb)
+        ;
+
+        
+    
+    
+                marker_8fc9bca1adfc29504b425896bef12afe.setIcon(icon_df41e7257750ed6e61d0932e1588f1d9);
+            
+    
+            var marker_92599c642f564800527a3f92aad607de = L.marker(
+                [-20.383016, -40.373994],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_6aca65e93ca3b52c02f8afe7177bb36c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b5d20270c667b922f4a46d9878fd127 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac2a550ad46c59fb2a3d11b81c4b9e72 = $(`<div id="html_ac2a550ad46c59fb2a3d11b81c4b9e72" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-28T16:39:50</div>`)[0];
+                popup_5b5d20270c667b922f4a46d9878fd127.setContent(html_ac2a550ad46c59fb2a3d11b81c4b9e72);
+            
+        
+
+        marker_92599c642f564800527a3f92aad607de.bindPopup(popup_5b5d20270c667b922f4a46d9878fd127)
+        ;
+
+        
+    
+    
+                marker_92599c642f564800527a3f92aad607de.setIcon(icon_6aca65e93ca3b52c02f8afe7177bb36c);
+            
+    
+            var marker_d390f49d959a76b9e122737b4d155a36 = L.marker(
+                [-20.321126, -40.389147],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_e1b24b03658b5101cc3600c5e70e9791 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c9168ac698c8f37331fcd4a325529f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9fa3f69364134f251fdeaaf45a6ba681 = $(`<div id="html_9fa3f69364134f251fdeaaf45a6ba681" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-28T16:46:56</div>`)[0];
+                popup_3c9168ac698c8f37331fcd4a325529f0.setContent(html_9fa3f69364134f251fdeaaf45a6ba681);
+            
+        
+
+        marker_d390f49d959a76b9e122737b4d155a36.bindPopup(popup_3c9168ac698c8f37331fcd4a325529f0)
+        ;
+
+        
+    
+    
+                marker_d390f49d959a76b9e122737b4d155a36.setIcon(icon_e1b24b03658b5101cc3600c5e70e9791);
+            
+    
+            var marker_9ba12106600763b30316afea3ff941bc = L.marker(
+                [-20.200382, -40.320541],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_fc17087fb63000c46335712116938ca6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db66b28011fb2393e8da8fb7d59eb82a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_02fe20e54c23c0c8ffdb5825589c88f2 = $(`<div id="html_02fe20e54c23c0c8ffdb5825589c88f2" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-24T10:05</div>`)[0];
+                popup_db66b28011fb2393e8da8fb7d59eb82a.setContent(html_02fe20e54c23c0c8ffdb5825589c88f2);
+            
+        
+
+        marker_9ba12106600763b30316afea3ff941bc.bindPopup(popup_db66b28011fb2393e8da8fb7d59eb82a)
+        ;
+
+        
+    
+    
+                marker_9ba12106600763b30316afea3ff941bc.setIcon(icon_fc17087fb63000c46335712116938ca6);
+            
+    
+            var marker_0e592f09e8e979cc3e8f07824ddfe66d = L.marker(
+                [-19.961531, -40.28588],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_c23b2905978c0a32574a259e4323f01c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7d0708404fc06e47a9f07c75bb3a3e06 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b500e11d7ed312b90ecce98681f55d3 = $(`<div id="html_1b500e11d7ed312b90ecce98681f55d3" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Espírito Santo<br>2025-01-27T08:28</div>`)[0];
+                popup_7d0708404fc06e47a9f07c75bb3a3e06.setContent(html_1b500e11d7ed312b90ecce98681f55d3);
+            
+        
+
+        marker_0e592f09e8e979cc3e8f07824ddfe66d.bindPopup(popup_7d0708404fc06e47a9f07c75bb3a3e06)
+        ;
+
+        
+    
+    
+                marker_0e592f09e8e979cc3e8f07824ddfe66d.setIcon(icon_c23b2905978c0a32574a259e4323f01c);
+            
+    
+            var marker_ca3b4efb6ff9c0fd5b1635e230e166c5 = L.marker(
+                [-23.383866, -44.953784],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_a7ede03dc06792390a8f45c61500b555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1d1f8444cb8c47a9ff155651aed9ad4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_494fe5158ff757259cd2bdb346446789 = $(`<div id="html_494fe5158ff757259cd2bdb346446789" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - São Paulo<br>2025-02-07T10:28:46</div>`)[0];
+                popup_b1d1f8444cb8c47a9ff155651aed9ad4.setContent(html_494fe5158ff757259cd2bdb346446789);
+            
+        
+
+        marker_ca3b4efb6ff9c0fd5b1635e230e166c5.bindPopup(popup_b1d1f8444cb8c47a9ff155651aed9ad4)
+        ;
+
+        
+    
+    
+                marker_ca3b4efb6ff9c0fd5b1635e230e166c5.setIcon(icon_a7ede03dc06792390a8f45c61500b555);
+            
+    
+            var marker_29571c5f6d90477f66405bde1d10157f = L.marker(
+                [-7.803847, -34.96506],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_3153df243de23820af50f8f194c65041 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_763794a2053407159216510644ab93ce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c30c2ab51c33b7e8d73e4b82545becdd = $(`<div id="html_c30c2ab51c33b7e8d73e4b82545becdd" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Pernambuco<br>2025-02-11T07:30</div>`)[0];
+                popup_763794a2053407159216510644ab93ce.setContent(html_c30c2ab51c33b7e8d73e4b82545becdd);
+            
+        
+
+        marker_29571c5f6d90477f66405bde1d10157f.bindPopup(popup_763794a2053407159216510644ab93ce)
+        ;
+
+        
+    
+    
+                marker_29571c5f6d90477f66405bde1d10157f.setIcon(icon_3153df243de23820af50f8f194c65041);
+            
+    
+            var marker_5c1524f4a119d58eb34956e6cef92458 = L.marker(
+                [-7.950097, -34.901853],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_bfbc99df7a22323d982eb78c5f20023b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_09972a9266d959dc835a01d8d9bb89fc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8032c69e6abd74e7bda7564c0b9a39a = $(`<div id="html_a8032c69e6abd74e7bda7564c0b9a39a" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Pernambuco<br>2025-02-23T07:42</div>`)[0];
+                popup_09972a9266d959dc835a01d8d9bb89fc.setContent(html_a8032c69e6abd74e7bda7564c0b9a39a);
+            
+        
+
+        marker_5c1524f4a119d58eb34956e6cef92458.bindPopup(popup_09972a9266d959dc835a01d8d9bb89fc)
+        ;
+
+        
+    
+    
+                marker_5c1524f4a119d58eb34956e6cef92458.setIcon(icon_bfbc99df7a22323d982eb78c5f20023b);
+            
+    
+            var marker_5011f1a6345a4542d75d369ad42174a2 = L.marker(
+                [-22.895155, -42.112144],
+                {
+}
+            ).addTo(map_ed92b6ebb9fe4cdd0bb8f9fbb3d7c5c0);
+        
+    
+            var icon_d16416b1efb6d7bfc5cd96c5663a500f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96a2d7962b01b2679298f5eb7542a521 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad201c95f04b3c6c1909510e4e73c08b = $(`<div id="html_ad201c95f04b3c6c1909510e4e73c08b" style="width: 100.0%; height: 100.0%;">Tartaruga-marinha - Rio de Janeiro<br>2025-02-26</div>`)[0];
+                popup_96a2d7962b01b2679298f5eb7542a521.setContent(html_ad201c95f04b3c6c1909510e4e73c08b);
+            
+        
+
+        marker_5011f1a6345a4542d75d369ad42174a2.bindPopup(popup_96a2d7962b01b2679298f5eb7542a521)
+        ;
+
+        
+    
+    
+                marker_5011f1a6345a4542d75d369ad42174a2.setIcon(icon_d16416b1efb6d7bfc5cd96c5663a500f);
+            
+</script>
+</html>

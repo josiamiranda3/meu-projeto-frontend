@@ -1,0 +1,159 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+/* Seção principal do hero */
+main {
+  padding-top: 100px; /* Ajuste esse valor para bater com a altura real do seu header */
+}
+
+ .carousel-img {
+    height: 600px;         /* ou qualquer altura desejada */
+    object-fit: cover;     /* mantém o aspecto visual cortando o excesso */
+    width: 100%;
+
+ }
+
+ /* #impactos{
+    background-color: blue;
+ } */
+
+
+#animais{
+    padding-top: 100px;
+    background-color: rgb(231, 238, 228);
+}
+
+  
+.valores{
+ background-color: rgb(231, 238, 228);
+}
+
+#nossos-impactos {
+  background-color: #2e7d32; /* verde escuro */
+  color: #fff;
+  padding: 60px 0;
+}
+
+#nossos-impactos h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+#nossos-impactos p {
+  font-size: 1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+}
+
+#nossos-impactos .bi {
+  font-size: 3rem;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.15);
+  padding: 20px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#nossos-impactos .bi:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+#nossos-impactos h5 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+#nossos-impactos .col-md-3 p {
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.section-title{
+  text-align: center;
+
+}
+.projetos{
+  background-color: #a9d3b3;
+  padding: 60px 0;
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+  #nossos-impactos .bi {
+    font-size: 2.5rem;
+  }
+  #nossos-impactos h2 {
+    font-size: 2rem;
+  }
+}
+
+/* .custom-bg {
+  background-color: #3498db;
+} */
+
+/* footer */
+
+
+/* Cores padronizadas */
+.bg-footer {
+  background-color: #d4edda;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #198754;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #145c32;
+}
+
+/* Reduz altura geral */
+footer {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer input::placeholder {
+  color: #6c757d;
+}
+
+/* Dados Ambientiais: */
+
+.secao-dados-ambientais {
+  text-align: center;
+  padding: 40px;
+  background-color: #3f8d74;
+  color: white;
+}
+
+.botoes-links {
+  margin-top: 20px;
+}
+
+.botao-link {
+  display: inline-block;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  transition: background 0.3s ease;
+}
+
+.botao-link.verde {
+  background-color: #007B55;
+}
+
+.botao-link.laranja {
+  background-color: #D35400;
+}
+
+.botao-link:hover {
+  opacity: 0.9;
+  background-color: #a9d3b3;
+}

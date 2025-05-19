@@ -1,0 +1,92 @@
+main {
+  background-color: #f8f9fa;
+  padding: 2rem 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  margin-top: 50px;
+}
+
+/* .container {
+  max-width: 600px;
+  margin: 0 auto;
+} */
+
+h4 {
+  margin-bottom: 1.5rem;
+  font-size: 1.6rem;
+  color: #198754;
+}
+
+label.form-label {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+input.form-control,
+textarea.form-control {
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 0.6rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus,
+textarea.form-control:focus {
+  border-color: #198754;
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.25);
+}
+
+small.text-danger {
+  display: block;
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+}
+
+.form-check-label {
+  font-weight: 500;
+  color: #444;
+}
+
+.btn-success {
+  font-weight: bold;
+  padding: 0.75rem;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+}
+
+button{
+    cursor: pointer;
+}
+
+
+/* Cores padronizadas */
+.bg-footer {
+  background-color: #d4edda;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #198754;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #145c32;
+}
+
+/* Reduz altura geral */
+footer {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer input::placeholder {
+  color: #6c757d;
+}

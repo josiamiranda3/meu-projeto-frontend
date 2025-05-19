@@ -1,0 +1,56 @@
+
+<main>
+
+<div class="home-container">
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <!-- <button class="menu-button" (click)="toggleSidebar()">☰</button> -->
+      <!-- Botão que ativa o offcanvas -->
+      <button class="menu-button btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebarOffcanvas" aria-controls="sidebarOffcanvas">
+        ☰
+      </button>
+    <button class="logout-button" (click)="logout()"><i class="bi bi-person"></i></button>
+  </div>
+
+  <!-- Sidebar (condicional) -->
+  <!-- <div class="sidebar" *ngIf="sidebarOpen">
+    <img src="assets/ford.png" class="logo" alt="Logo Ford" />
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/dashboard">Dashboard</a></li>
+    </ul>
+  </div> -->
+
+  <!-- Sidebar como offcanvas Bootstrap -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="sidebarOffcanvas" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- <img src="logo-terra.jpg" class="logo" alt="Logo Terra" /> -->
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="/welcome">Home</a>
+        </li>
+
+        
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+   <!-- Overlay esverdeado -->
+   <!-- <div class="overlay" *ngIf="sidebarOpen" (click)="toggleSidebar()"></div> -->
+
+  <!-- Main Content -->
+  <div class="content">
+    <div class="welcome-card">
+      <h3>Sistema de dados</h3>
+      <p><a href="#">Seja bem-vindo(a)!</a></p>
+    </div>
+  </div>
+</div>
+</main>

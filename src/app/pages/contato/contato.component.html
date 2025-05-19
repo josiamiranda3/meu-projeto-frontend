@@ -1,0 +1,39 @@
+
+
+
+<main>
+<div class="container mt-4">
+  <h4 class="text-success fw-bold">Formulário de Contato</h4>
+
+  <form [formGroup]="form" (ngSubmit)="onSubmit()" novalidate>
+
+    <div class="mb-3">
+      <label for="nome" class="form-label">Nome Completo</label>
+      <input id="nome" type="text" class="form-control" formControlName="nome" />
+      <small *ngIf="t['nome'].errors?.['required'] && tocou('nome')" class="text-danger">Obrigatório.</small>
+      <small *ngIf="t['nome'].errors?.['minlength']" class="text-danger">Mín. 3 caracteres.</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">E-mail</label>
+      <input id="email" type="email" class="form-control" formControlName="email" />
+      <small *ngIf="t['email'].errors?.['required'] && tocou('email')" class="text-danger">Obrigatório.</small>
+      <small *ngIf="t['email'].errors?.['email']" class="text-danger">Formato inválido.</small>
+    </div>
+
+    <div class="mb-3">
+      <label for="mensagem" class="form-label">Mensagem</label>
+      <textarea id="mensagem" rows="4" class="form-control" formControlName="mensagem"></textarea>
+      <small *ngIf="t['mensagem'].errors?.['required'] && tocou('mensagem')" class="text-danger">Obrigatório.</small>
+    </div>
+
+    <div class="form-check mb-3">
+      <input id="voluntario" type="checkbox" class="form-check-input" formControlName="voluntario" />
+      <label for="voluntario" class="form-check-label">Desejo me voluntariar</label>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100" [disabled]="form.invalid">Enviar Mensagem</button>
+  </form>
+</div>
+</main>
+

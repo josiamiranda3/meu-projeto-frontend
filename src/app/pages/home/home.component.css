@@ -1,0 +1,136 @@
+/* Seção principal do hero */
+main {
+  padding-top: auto; /* Ajuste esse valor conforme a altura real do header */
+}
+
+/* Vídeo de fundo */
+#video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero {
+   position: relative;
+  /* background-color: #8d8d8d;  */
+    background-color: transparent; /* Remove o cinza anterior */
+
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+   overflow: hidden; /* Garante que o vídeo não ultrapasse os limites */
+}
+
+/* Conteúdo centralizado */
+.hero-content {
+  z-index: 1; /* Coloca o conteúdo acima do vídeo */
+  max-width: 800px;
+}
+
+/* Título */
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Parágrafo */
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+/* Botões */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-green {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+}
+
+.btn-white {
+  background-color: white;
+  color: #28a745;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.btn-white:hover {
+  background-color: #f8f9fa;
+}
+
+/* Cores padronizadas */
+.bg-footer {
+  background-color: #d4edda;
+}
+
+.footer-link {
+  text-decoration: none;
+  color: #198754;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: #145c32;
+}
+
+/* Reduz altura geral */
+footer {
+  font-size: 0.9rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+footer input::placeholder {
+  color: #6c757d;
+}
+
+
+/* Animação de fade-in */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aparece suavemente */
+.fade-in {
+  animation: fadeInUp 1s ease-out forwards;
+  opacity: 0; /* Começa invisível */
+}
+
+/* Pequeno delay para o parágrafo */
+.fade-in-delay {
+  animation: fadeInUp 1.5s ease-out forwards;
+  opacity: 0;
+}

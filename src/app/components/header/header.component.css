@@ -1,0 +1,4 @@
+.nav-link.text-success:hover {
+  color: #28a745 !important; /* Exemplo: um verde mais escuro */
+  transition: color 0.3s ease;
+}

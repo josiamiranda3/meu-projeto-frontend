@@ -1,0 +1,41 @@
+<main>
+<div class="container">
+  <div class="left">
+    <img src="assets/logo-gaia.png" alt="Ford Ranger" />
+  </div>
+  <div class="right">
+    <img src="assets/logo-terra.jpg" alt="Logo Ford" class="logo" />
+    <h2>Boas-vindas</h2>
+    <form (ngSubmit)="login()" #formLogin="ngForm">
+      <div class="form-group input-with-icon">
+        <i class="bi bi-person-circle"></i>
+        <input
+          type="text"
+          name="email"
+          [(ngModel)]="email"
+          placeholder="Insira seu e-mail"
+          required
+        />
+      </div>
+      <div class="form-group input-with-icon">
+        <i class="bi bi-lock"></i>
+        <input
+          type="password"
+          name="password"
+          [(ngModel)]="password"
+          placeholder="Insira sua senha"
+          required
+        />
+      </div>
+      <div class="form-group switch">
+        <label class="switch-label">
+          <input type="checkbox" name="remember" [(ngModel)]="remember" />
+          <span class="slider"></span>
+          Logar automaticamente
+        </label>
+      </div>
+      <button type="submit" [disabled]="formLogin.invalid">Entrar</button>
+    </form>
+  </div>
+</div>
+</main>

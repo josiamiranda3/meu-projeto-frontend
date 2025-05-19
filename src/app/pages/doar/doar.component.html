@@ -1,0 +1,85 @@
+
+
+
+<main class="bg-light">
+
+    <!-- falta a inclusão das imagens,sendo que as atuais são somente temporarias, inclusão de icones com o boots  -->
+
+    <!-- Seção: Outras Formas de Doação -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center text-success mb-5">Outras Formas de Doação</h2>
+            <div class="row g-4 justify-content-center">
+                <!-- <div class="col-md-4">
+                    <div class="card shadow-sm text-center p-4"> -->
+                        <!-- <i class="bi bi-credit-card"></i>  icone de cartão de credito-->
+                        <!-- <img src="/assets/doar.jpg" class="card-img-top mx-auto mb-3" alt="Cartão de Crédito" style="width: 80px; height: 80px;"> -->
+                        <!-- <h5 class="mb-3">Cartão de Crédito</h5>
+                        <p>Doação única ou mensal com cartão de crédito</p>
+                        <a href="#" class="btn btn-success">Doar Agora</a>
+                    </div>
+                </div> -->
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center p-4">
+                        <!-- <i class="bi bi-paypal"></i>   Icone Paypal-->
+                        <!-- <img src="/assets/doar.jpg" class="card-img-top mx-auto mb-3" alt="PayPal" style="width: 80px; height: 80px;"> -->
+                        <h5 class="mb-3">PayPal</h5>
+                        <p>Doação segura através da plataforma PayPal</p>
+                        <a href="https://www.paypal.com/ncp/payment/3GKZRB64WRPQ6" target="_blank"  class="btn btn-success">Doar via PayPal</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm text-center p-4">
+                        <!-- <i class="bi bi-bank"></i>  Icone de Banco já servindo para bootstrep-->
+                        <!-- <img src="/assets/doar.jpg" class="card-img-top mx-auto mb-3" alt="Transferência Bancária" style="width: 80px; height: 80px;"> -->
+                        <h5 class="mb-3">Transferência Bancária</h5>
+                        <p>Dados bancários para transferência ou DOC/TED</p>
+                        <a href="/transferencia" class="btn btn-success">Ver Dados</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção: Faça uma Doação Sendo que nesse trocar as imagens por icones do boots, além de criar um  Qrcode  para a doação de pix -->
+    <section class="bg-white py-5">
+        <div class="container d-flex flex-wrap">
+            <div class="col-md-6">
+                <h2 class="text-success mb-4">Como seu dinheiro será usado</h2>
+                <div class="mb-3">
+                    <!-- <i class="bi bi-tree"></i> icone de arvore -->
+                    <!-- <img src="/assets/doar2.jpg" class="me-3" alt="Reflorestamento" style="width: 50px; height: 50px;"> -->
+                    <strong>Reflorestamento</strong>
+                    <p>40% dos recursos são destinados à compra de mudas, equipamentos e manutenção de áreas reflorestadas.</p>
+                </div>
+                <div class="mb-3">
+                    <!-- <img src="/assets/doar2.jpg" class="me-3" alt="Resgate Animal" style="width: 50px; height: 50px;"> -->
+                    <strong>Resgate Animal</strong>
+                    <p>30% para tratamento veterinário, alimentação e manutenção de nossos centros de reabilitação.</p>
+                </div>
+                <div class="mb-3">
+                    <!-- <img src="/assets/doar2.jpg" class="me-3" alt="Educação Ambiental" style="width: 50px; height: 50px;"> -->
+                    <strong>Educação Ambiental</strong>
+                    <p>20% para desenvolvimento de materiais educativos e realização de workshops em comunidades.</p>
+                </div>
+                <div class="mb-3">
+                    <!-- <img src="/assets/doar2.jpg" class="me-3" alt="Estrutura" style="width: 50px; height: 50px;"> -->
+                    <strong>Estrutura</strong>
+                    <p>10% para manutenção de nossa sede, equipamentos e despesas administrativas.</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 bg-light p-4 rounded shadow-sm">
+                <h2 class="text-success mb-3">Doação via PIX</h2>
+                <div class="bg-success text-white p-3 mb-3 rounded">
+                    <strong>Chave PIX (CNPJ):</strong><br>
+                    52.083.618/0001-66
+                </div>
+                <!-- <p>Escaneie o QR Code ou utilize nossa chave PIX para fazer sua doação. Qualquer valor é bem-vindo!</p> -->
+                <button class="btn btn-success" (click)="copiarChavePix()">Copiar chave</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</main>

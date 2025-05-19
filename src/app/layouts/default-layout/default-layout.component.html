@@ -1,0 +1,10 @@
+<div class="audio-toggle">
+  <button (click)="toggleAudio()" aria-label="Ativar som">
+    <i [ngClass]="isAudioPlaying ? 'bi bi-mic-fill' : 'bi bi-mic-mute-fill'"></i>
+  </button>
+  <audio #backgroundAudio loop src="assets/Skyward.mp3"></audio>
+</div>
+<app-header></app-header>
+<router-outlet></router-outlet>
+<app-footer></app-footer>
+

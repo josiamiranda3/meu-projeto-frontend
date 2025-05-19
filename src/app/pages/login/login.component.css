@@ -1,0 +1,176 @@
+@import "bootstrap-icons/font/bootstrap-icons.css";
+/* *{
+    background-color: rgb(96, 107, 26);
+} */
+
+main{
+    background-color: rgb(125, 207, 154);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+    /* border: solid 2px #923030; */
+        /* background-color:rgb(135, 183, 164); */
+
+  }
+  
+  .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 2px #923030; */
+  }
+  
+  .left img {
+    max-width: 100%;
+    height: auto;
+    /* border: solid 2px #923030; */
+    opacity: 0.5;
+  }
+  
+  .right {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: solid 2px #af8c8c; */
+    background-color: rgb(224, 239, 224)
+  }
+
+  h2{
+    color: rgb(76, 145, 123);
+    font-weight: 35;
+    /* gap: 100px; */
+    /* border: solid 2px #673274;   */
+    margin-bottom: 40px;
+    letter-spacing: 5px;
+  }
+  
+  .logo {
+    /* width: 100px; */
+    width: 150px;
+    /* margin-bottom: 20px; */
+    position: relative;
+    top: -120px; 
+    /* border: solid 2px #923030; */
+    /* padding-bottom: 200px; */
+    /* subir logo */
+    /* position: relative;
+    top: -120px; */
+
+  }
+  
+  form {
+    width: 100%;
+    max-width: 500px;
+    /* border: solid 2px #923030; */
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    /* border: solid 2px #142d4e; */
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* border: solid 2px #701616; */
+  }
+  
+  .checkbox {
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #aaa;
+    transform: scale(1.05);
+  transition: background-color 0.3s, transform 0.3s;
+  color: black;
+  }
+  button:active {
+    background-color: #5e6cb6; /* cor mais escura ao clicar */
+     /* efeito de "apertar" */
+  }
+
+  /* para encaixar os ícones */
+
+  .input-with-icon {
+    position: relative;
+  }
+  
+  .input-with-icon i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+  }
+  
+  .input-with-icon input {
+    padding-left: 35px; /* espaço para o ícone */
+  }
+
+  /* botao Deslizante */
+
+
+  .switch-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .switch-label input[type="checkbox"] {
+    display: none;
+  }
+  
+  .slider {
+    position: relative;
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.4s;
+  }
+  
+  .slider::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: 2px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+  }
+  
+  /* Quando o checkbox estiver checado */
+  .switch-label input:checked + .slider {
+    background-color: #4caf50;
+  }
+  
+  .switch-label input:checked + .slider::before {
+    transform: translateX(20px);
+  }
+  
