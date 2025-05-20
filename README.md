@@ -1,59 +1,110 @@
-# ProjetoFinalOng
+📚 Documentação Simplificada - Instituto Terra Viva
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+1️⃣ Como Usar o Sistema
 
-## Development server
+🔓 Acesso Público
 
-To start a local development server, run:
+Home: Visualize dados ambientais em tempo real
 
-```bash
+Espécies: Consulte animais em extinção
+
+Doações: Faça contribuições via transferência bancária
+
+🔐 Acesso Administrativo
+
+Acesse: /login
+
+Use suas credenciais:
+
+Usuário: admin@terraviva.org
+
+Senha: Admin@2024 (altere após o primeiro acesso)
+
+2️⃣ Configuração Rápida
+
+📦 Backend
+
+cd backend
+npm install
+echo "MONGODB_URI=sua_conexao" > .env
+npm start
+
+🌐 Frontend
+
+cd frontend
+npm install
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Acesse: http://localhost:4200
 
-## Code scaffolding
+3️⃣ Principais Funcionalidades
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Recurso
 
+Como Acessar
+
+O Que Faz
+
+🐾 Mapa de Espécies
+
+Menu "Animais" > Mapa
+
+Mostra ocorrências em tempo real
+
+🛰️ Alertas de Desmatamento
+
+Menu "Dados" > MapBiomas
+
+Exibe áreas de risco
+
+🌍 Painel de CO₂
+
+Menu "Dados" > Emissões
+
+Compara emissões por país
+
+4️⃣ Solução de Problemas
+
+❌ Dados não carregam?
+
+✅ Verifique a conexão com a internet✅ Recarregue a página (F5)✅ Confira se o backend está rodando: http://localhost:3000
+
+❌ Login não funciona?
+
+✅ Verifique se está usando HTTPS (em produção)✅ Limpe o cache do navegador
+
+5️⃣ Contato do Suporte
+
+📧 E-mail: suporte@terraviva.org📞 Plantão: (81) 99999-0000 (24h para emergências ambientais)
+
+⚠️ Importante: Nunca compartilhe suas credenciais de acesso!
+
+✅ Versão Alternativa (Super Simples)
+
+# 🚀 Guia Rápido
+
+1. **Instalação**
 ```bash
-ng generate component component-name
-```
+git clone projeto
+cd backend && npm install && npm start
+cd ../frontend && npm install && ng serve
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Acesso
 
-```bash
-ng generate --help
-```
+Usuário comum: Use os menus públicos
 
-## Building
+Admin: /login
 
-To build the project run:
+user: admin@terraviva.org
 
-```bash
-ng build
-```
+senha: Admin@2024
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Principais Telas
 
-## Running unit tests
+🌍 Mapa de espécies: /animais
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+📊 Dados ambientais: /dados
 
-```bash
-ng test
-```
+💰 Doações: /doar
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Ajuda?📩 contato@terraviva.org | 📞 (81) 99999-0000
