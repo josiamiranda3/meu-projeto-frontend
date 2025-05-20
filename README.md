@@ -36,7 +36,7 @@ A aplicação foi desenvolvida com **Angular** e está publicada no **Netlify**.
 
 ## 🚀 Tecnologias Utilizadas
 
-- **Angular 17** com Standalone Components
+- **Angular ++17** com Standalone Components
 - **Bootstrap Icons**
 - **Netlify** para deploy do front-end
 - **Render** para deploy do back-end (API)
