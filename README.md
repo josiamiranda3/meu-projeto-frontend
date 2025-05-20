@@ -11,8 +11,8 @@ A aplicação foi desenvolvida com **Angular** e está publicada no **Netlify**.
 ## 🔗 Acesso Rápido
 
 - 🌐 **Site online (Netlify):** [instituto-terra-viva.netlify.app](dapper-klepon-edecc3.netlify.app/)
-- 🖥️ **Repositório do back-end:** [github.com/seu-usuario/backend-terra-viva](https://github.com/josiamiranda3/meu-projeto-backend) *(altere o link conforme seu GitHub)*
-- 🚀 **Back-end online (Render):** [https://terra-viva-api.onrender.com](https://dashboard.render.com/web/srv-d0ls6jadbo4c73c80um0) *(ou o link real da sua API)*
+- 🖥️ **Repositório do back-end:** [github.com/seu-usuario/backend-terra-viva](https://github.com/josiamiranda3/meu-projeto-backend)
+- 🚀 **Back-end online (Render):** [https://terra-viva-api.onrender.com](https://dashboard.render.com/web/srv-d0ls6jadbo4c73c80um0) 
 
 ---
 
