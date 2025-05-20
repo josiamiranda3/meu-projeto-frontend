@@ -1,110 +1,89 @@
-📚 Documentação Simplificada - Instituto Terra Viva
+# 🌱 Instituto Terra Viva — Front-End
 
-1️⃣ Como Usar o Sistema
+Este repositório contém o **front-end** do projeto **Instituto Terra Viva**, uma ONG fictícia dedicada à preservação da biodiversidade e à conscientização ambiental.
 
-🔓 Acesso Público
+A aplicação foi desenvolvida com **Angular** e está publicada no **Netlify**.
 
-Home: Visualize dados ambientais em tempo real
+> ⚠️ O back-end foi movido para um repositório separado e está hospedado na plataforma Render.
 
-Espécies: Consulte animais em extinção
+---
 
-Doações: Faça contribuições via transferência bancária
+## 🔗 Acesso Rápido
 
-🔐 Acesso Administrativo
+- 🌐 **Site online (Netlify):** [instituto-terra-viva.netlify.app](dapper-klepon-edecc3.netlify.app/)
+- 🖥️ **Repositório do back-end:** [github.com/seu-usuario/backend-terra-viva](https://github.com/josiamiranda3/meu-projeto-backend) *(altere o link conforme seu GitHub)*
+- 🚀 **Back-end online (Render):** [https://terra-viva-api.onrender.com](https://dashboard.render.com/web/srv-d0ls6jadbo4c73c80um0) *(ou o link real da sua API)*
 
-Acesse: /login
+---
 
-Use suas credenciais:
+## 📁 Estrutura do Projeto
 
-Usuário: admin@terraviva.org
-
-Senha: Admin@2024 (altere após o primeiro acesso)
-
-2️⃣ Configuração Rápida
-
-📦 Backend
-
-cd backend
-npm install
-echo "MONGODB_URI=sua_conexao" > .env
-npm start
-
-🌐 Frontend
-
-cd frontend
-npm install
-ng serve
-
-Acesse: http://localhost:4200
-
-3️⃣ Principais Funcionalidades
-
-Recurso
-
-Como Acessar
-
-O Que Faz
-
-🐾 Mapa de Espécies
-
-Menu "Animais" > Mapa
-
-Mostra ocorrências em tempo real
-
-🛰️ Alertas de Desmatamento
-
-Menu "Dados" > MapBiomas
-
-Exibe áreas de risco
-
-🌍 Painel de CO₂
-
-Menu "Dados" > Emissões
-
-Compara emissões por país
-
-4️⃣ Solução de Problemas
-
-❌ Dados não carregam?
-
-✅ Verifique a conexão com a internet✅ Recarregue a página (F5)✅ Confira se o backend está rodando: http://localhost:3000
-
-❌ Login não funciona?
-
-✅ Verifique se está usando HTTPS (em produção)✅ Limpe o cache do navegador
-
-5️⃣ Contato do Suporte
-
-📧 E-mail: suporte@terraviva.org📞 Plantão: (81) 99999-0000 (24h para emergências ambientais)
-
-⚠️ Importante: Nunca compartilhe suas credenciais de acesso!
-
-✅ Versão Alternativa (Super Simples)
-
-# 🚀 Guia Rápido
-
-1. **Instalação**
 ```bash
-git clone projeto
-cd backend && npm install && npm start
-cd ../frontend && npm install && ng serve
+├── src/
+│   ├── app/
+│   │   ├── components/        # Componentes reutilizáveis (header, footer, etc)
+│   │   ├── layouts/           # Layouts de página (default, blank)
+│   │   ├── pages/             # Páginas principais do site (home, sobre, impactos, etc)
+│   │   ├── app.routes.ts      # Configuração de rotas
+│   │   └── app.config.ts      # Configuração global do Angular
+│   └── assets/                # Vídeos, imagens e áudio
+├── index.html
+├── styles.css
+└── README.md
+```
 
-Acesso
+---
 
-Usuário comum: Use os menus públicos
+## 🚀 Tecnologias Utilizadas
 
-Admin: /login
+- **Angular 17** com Standalone Components
+- **Bootstrap Icons**
+- **Netlify** para deploy do front-end
+- **Render** para deploy do back-end (API)
 
-user: admin@terraviva.org
+---
 
-senha: Admin@2024
+## 📦 Instalação e Execução Local
 
-Principais Telas
+```bash
+# 1. Clone o repositório
+git clone https://github.com/josiamiranda3/meu-projeto-frontend
 
-🌍 Mapa de espécies: /animais
+# 2. Acesse o diretório
+cd front-terra-viva
 
-📊 Dados ambientais: /dados
+# 3. Instale as dependências
+npm install
 
-💰 Doações: /doar
+# 4. Execute o servidor de desenvolvimento
+ng serve
+```
 
-Ajuda?📩 contato@terraviva.org | 📞 (81) 99999-0000
+> A aplicação será executada em `http://localhost:4200`
+
+---
+
+## 🔈 Recurso de Áudio
+
+O site possui um botão global que ativa/desativa uma música de fundo. O áudio está inicialmente desativado por padrão, e o ícone do microfone muda conforme o estado (mutado ou ativado).
+
+---
+
+## 🔗 Integração com Back-End
+
+A aplicação consome dados via **API REST**, cujo repositório e hospedagem estão separados deste projeto. Para testar funcionalidades que envolvam requisições (como exibição de impactos ou doações), certifique-se de que a [API esteja online].
+
+---
+
+## 📄 Licença
+
+Este projeto é fictício, criado para fins educacionais e sem fins lucrativos. Sinta-se à vontade para estudar, adaptar e utilizar como base em projetos pessoais.
+
+---
+
+## 🙋‍♂️ Contato
+
+Caso tenha dúvidas ou sugestões, entre em contato:
+
+- GitHub: https://github.com/josiamiranda3
+- E-mail: josiamiranda3@gmail.com
