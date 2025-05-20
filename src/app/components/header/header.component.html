@@ -1,49 +1,53 @@
 <header>
-<!-- Header Bootstrap Adaptado -->
-<nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: #d4edda;">
-  <div class="container">
-    <!-- Logo -->
-    <img src="/assets/logo-terra.jpg" alt="Logo Instituto Terra Viva" style="height: 40px; width: auto; margin-right: 10px;">
-    <a class="navbar-brand d-flex align-items-center text-success fw-bold fs-4" href="#">
-      <i class="fas fa-leaf me-2"></i> Instituto Terra Viva
-    </a>
+  <!-- Header Bootstrap Adaptado -->
+  <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: #d4edda;">
+    <div class="container">
+      <!-- Logo -->
+      <img src="/assets/logo-terra.jpg" alt="Logo Instituto Terra Viva" style="height: 40px; width: auto; margin-right: 10px;">
+      <a class="navbar-brand d-flex align-items-center text-success fw-bold fs-4" routerLink="/">
+        <i class="fas fa-leaf me-2"></i> Instituto Terra Viva
+      </a>
 
-    <!-- Botão hamburguer -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Botão hamburguer -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Itens do menu -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link text-success fw-medium" href="/">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success fw-medium" href="/sobre">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success fw-medium" href="/impactos">Impactos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-success fw-medium" href="/contato">Contato</a>
-        </li>
-        <li class="nav-item">
-          <a class="btn btn-success text-white ms-lg-3 mt-2 mt-lg-0" href="/doar">Doar</a>
-        </li>
-        <li class="nav-item d-flex align-items-center ms-2">
-  <a class="nav-link text-success fs-5" href="/login" title="Ir para login">
-    <i class="bi bi-person"></i>
-  </a>
-</li>
-
-      </ul>
+      <!-- Itens do menu -->
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-success fw-medium"
+               routerLink="/"
+               routerLinkActive="active-link"
+               [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-medium"
+               routerLink="/sobre"
+               routerLinkActive="active-link">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-medium"
+               routerLink="/impactos"
+               routerLinkActive="active-link">Impactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-success fw-medium"
+               routerLink="/contato"
+               routerLinkActive="active-link">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-success text-white ms-lg-3 mt-2 mt-lg-0" routerLink="/doar">Doar</a>
+          </li>
+          <li class="nav-item d-flex align-items-center ms-2">
+            <a class="nav-link text-success fs-5" routerLink="/login" title="Ir para login">
+              <i class="bi bi-person"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-</nav>
-
-<!-- Espaço para compensar o header fixo -->
-<!-- <div style="height: 80px;"></div> -->
-
+  </nav>
 </header>
