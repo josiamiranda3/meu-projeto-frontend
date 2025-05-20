@@ -13,6 +13,9 @@ import { FormsModule } from '@angular/forms';
 export class ImpactosComponent implements OnInit {
   private http = inject(HttpClient);
 
+  // URL base do backend hospedado no Render
+  private API_BASE_URL = 'https://meu-projeto-backend-k781.onrender.com/api';
+
   // Ocorrências de espécies ameaçadas
   loading = true;
   erro = false;
@@ -34,7 +37,7 @@ export class ImpactosComponent implements OnInit {
 
   ngOnInit(): void {
     // Ocorrências fixas
-    this.http.get<any[]>('http://localhost:3000/api/ocorrencias').subscribe({
+    this.http.get<any[]>(`${this.API_BASE_URL}/ocorrencias`).subscribe({
       next: (res) => {
         this.dados = res;
         this.loading = false;
@@ -47,7 +50,7 @@ export class ImpactosComponent implements OnInit {
     });
 
     // Dados de CO₂
-    this.http.get<any[]>('http://localhost:3000/api/co2').subscribe({
+    this.http.get<any[]>(`${this.API_BASE_URL}/co2`).subscribe({
       next: (res) => {
         this.co2Dados = res;
         this.co2Loading = false;
@@ -65,7 +68,7 @@ export class ImpactosComponent implements OnInit {
     this.erroCustom = false;
     this.resultadoCustom = [];
 
-    const url = `http://localhost:3000/api/ocorrencias/custom?scientificName=${this.especie}&country=${this.pais}&limit=${this.limite}`;
+    const url = `${this.API_BASE_URL}/ocorrencias/custom?scientificName=${this.especie}&country=${this.pais}&limit=${this.limite}`;
 
     this.http.get<any[]>(url).subscribe({
       next: (res) => {
