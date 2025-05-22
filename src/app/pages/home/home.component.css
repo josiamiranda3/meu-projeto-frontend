@@ -40,12 +40,14 @@ main {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* sombra no texto */
 }
 
 /* Parágrafo */
 .hero-content p {
   font-size: 1.25rem;
   margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* sombra no texto */
 }
 
 /* Botões */
@@ -63,11 +65,13 @@ main {
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-green:hover {
   background-color: #218838;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-white {
@@ -77,12 +81,16 @@ main {
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
 }
 
 .btn-white:hover {
   background-color: #f8f9fa;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+
+
 
 /* Cores padronizadas */
 .bg-footer {
