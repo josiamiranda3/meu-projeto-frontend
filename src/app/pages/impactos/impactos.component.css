@@ -157,3 +157,67 @@ footer input::placeholder {
   opacity: 0.9;
   background-color: #a9d3b3;
 }
+
+/* Estilos do Efeito 3D Flip */
+.card-3d {
+  perspective: 1000px;
+  height: 100%; /* Garante que todos os cards tenham a mesma altura */
+  min-height: 350px; /* Altura mínima para conteúdo */
+}
+
+.card-3d-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card-3d:hover .card-3d-inner {
+  transform: rotateY(180deg);
+}
+
+.card-3d-front, .card-3d-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-3d-back {
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Melhorias visuais */
+.card-3d-front img {
+  border-radius: 0.25rem 0.25rem 0 0;
+  max-height: 150px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-3d-back ul li {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Adaptação para mobile */
+@media (max-width: 768px) {
+  .card-3d {
+    min-height: 300px;
+  }
+  
+  .card-3d-inner {
+    transform: none !important; /* Remove o flip em mobile */
+  }
+  
+  .card-3d-back {
+    display: none; /* Esconde o verso em mobile */
+  }
+}
