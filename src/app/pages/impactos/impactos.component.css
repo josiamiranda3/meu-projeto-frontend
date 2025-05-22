@@ -159,17 +159,18 @@ footer input::placeholder {
 }
 
 /* Estilos do Efeito 3D Flip */
+/* Estilos melhorados */
 .card-3d {
   perspective: 1000px;
-  height: 100%; /* Garante que todos os cards tenham a mesma altura */
-  min-height: 350px; /* Altura mínima para conteúdo */
+  height: 100%;
+  min-height: 400px; /* Aumentado para comportar mais texto */
 }
 
 .card-3d-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  transition: transform 0.8s;
+  transition: transform 0.6s;
   transform-style: preserve-3d;
 }
 
@@ -183,41 +184,57 @@ footer input::placeholder {
   height: 100%;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
-  border-radius: 0.25rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  overflow: hidden; /* Garante que bordas arredondadas funcionem */
 }
 
 .card-3d-back {
   transform: rotateY(180deg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
-/* Melhorias visuais */
-.card-3d-front img {
-  border-radius: 0.25rem 0.25rem 0 0;
-  max-height: 150px;
-  object-fit: cover;
-  width: 100%;
+.card-3d-front .badge {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  font-size: 0.75rem;
+}
+
+/* Melhorias de layout */
+.card-3d-back .card-body {
+  overflow-y: auto; /* Scroll se conteúdo for muito longo */
+  padding: 1.25rem;
+}
+
+.card-3d-back .alert {
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+}
+
+.card-3d-back ul {
+  padding-left: 1rem;
 }
 
 .card-3d-back ul li {
-  padding: 0.3rem 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 0.3rem;
 }
 
-/* Adaptação para mobile */
+/* Tipografia */
+.card-3d-back .card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-top: 1rem;
+}
+
+/* Responsivo */
 @media (max-width: 768px) {
   .card-3d {
-    min-height: 300px;
+    min-height: 350px;
   }
   
-  .card-3d-inner {
-    transform: none !important; /* Remove o flip em mobile */
-  }
-  
-  .card-3d-back {
-    display: none; /* Esconde o verso em mobile */
+  .card-3d-back .card-text {
+    font-size: 0.85rem;
   }
 }
